@@ -124,12 +124,23 @@ void Graph::printSCCs()
 } 
 
 int main() {
+    int parks = 0, sections = 0, connections = 0, pointingAt = 0, pointingTo = 0;
     ifstream inFile;
     inFile.open("/Users/wargen/Desktop/github/ICPCtraining/C++/spINPUT.txt");
 
-    int x = 0;
-    while (inFile >> x) {
-        cout << x << endl;
+    inFile >> parks;
+    for (int i = 0; i < parks; i++) {
+        inFile >> sections;
+        inFile >> connections;
+        Graph g(sections);
+
+        for (int j = 0; j < connections; j++) {
+            inFile >> pointingAt;
+            inFile >> pointingTo;
+            g.addEdge(pointingAt, pointingTo); 
+        }
+
+        g.printSCCs();
     }
 
     inFile.close();
