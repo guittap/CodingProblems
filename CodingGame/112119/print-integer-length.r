@@ -1,0 +1,1 @@
+gets.to_i%4==0?(puts'A'*10+"!"*3):(puts"Ok")
