@@ -1,0 +1,1 @@
+gets.chomp.each{ |c| puts c}
