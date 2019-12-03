@@ -1,0 +1,1 @@
+gets.to_i.times{w=gets.chop;p w==w.reverse}
