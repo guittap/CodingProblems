@@ -1,0 +1,10 @@
+g=int(input())
+s=int(input())
+b=int(input())
+b+=s*100
+s=b//100
+b-=s*100
+s+=g*100
+g=s//100
+s-=g*100
+print(str(g)+"G",str(s)+"S",str(b)+"B")
