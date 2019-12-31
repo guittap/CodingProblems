@@ -1,0 +1,1 @@
+gets.split.each{|c|print c[-1]*c[0..-1].to_i}

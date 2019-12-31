@@ -1,0 +1,1 @@
+for i in input().split():print(i[-1]*int(i[:-1]),end="")
