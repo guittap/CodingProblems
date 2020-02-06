@@ -1,0 +1,1 @@
+gets.to_i.times{b,t=gets.split.map{|n|n.to_i};t=t*9/5+32;puts b>t ?"Higher":b<t ?"Lower":"Same"}
