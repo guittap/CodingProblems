@@ -4,10 +4,13 @@ import math
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
 
-b = input()
+b = bin(int(input()))[2:]
+answer = ""
 
 for i in b:
-    if int(i)==0:
-        print(1,end="")
+    if int(i) == 0:
+        answer += "1"
     else:
-        print(0,end="")
+        answer += "0"
+
+print(int(answer, 2))
