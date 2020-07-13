@@ -1,0 +1,1 @@
+gets.to_i.to_s(26).split('').each{|c|print c.match(/^[[:alpha:]]$/)?(c.ord-22).chr: (c.to_i+65).chr}
