@@ -1,24 +1,18 @@
+# original
 input()
 a = [int(i)for i in input().split()]
 b = sum(i for i in a if i % 2 == 0)
 c = sum(i for i in a if i % 2)
 d = a[len(a)//2]
-print(b, "x", c, "+", str(d)+"^2 =", b*c+(d*d))
+print(b, "x", c, "+", str(d)+"^2 =", b*c+d*d)
 
+# original with f""
 input()
 a = list(map(int, input().split()))
 b = sum(i for i in a if i % 2 < 1)
 c = sum(i for i in a if i % 2)
 d = a[len(a)//2]
 print(f"{b} x {c} + {d}^2 = {b*c+d*d}")
-
-x = input
-x()
-a = list(map(int, x().split()))
-b = sum(i for i in a if i % 2 == 0)
-c = sum(i for i in a if i % 2)
-d = a[len(a)//2]
-x(f'{b} x {c} + {d}^2 = {b*c+d**2}')
 
 x = input
 x()
